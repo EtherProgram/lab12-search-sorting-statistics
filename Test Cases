@@ -1,0 +1,27 @@
+/*
+ * Test Cases:
+ *
+ * 1. Inputs: Select option 1, enter ID 109.
+ *    Expected: Displays inspection 109, Assembly, vibration 0.30.
+ *    Observed: Displays ID: 109 | Area: Assembly | Vibration: 0.30.
+ *
+ * 2. Inputs: Select option 1, enter ID 999.
+ *    Expected: Inspection not found.
+ *    Observed: Inspection not found.
+ *
+ * 3. Inputs: Select option 2, enter Assembly.
+ *    Expected: Displays three inspections and Matches: 3.
+ *    Observed: Displays IDs 101, 109, 123 and Matches: 3.
+ *
+ * 4. Inputs: Select option 2, enter Optics.
+ *    Expected: Displays no inspection rows and Matches: 0.
+ *    Observed: Displays Matches: 0.
+ *
+ * 5. Inputs: Select option 3.
+ *    Expected: Mean 0.24, median 0.23, modes 0.15 and 0.30.
+ *    Observed: Mean: 0.24, Median: 0.23, Mode: 0.15, 0.30.
+ *
+ * 6. Inputs: Select option 8.
+ *    Expected: Displays Invalid option.
+ *    Observed: Displays Invalid option. Original inspection data remains unchanged.
+ */

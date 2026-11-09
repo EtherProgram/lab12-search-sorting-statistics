@@ -1,0 +1,24 @@
+/*
+ * Analysis:
+ *
+ * 1. Why does findInspectionById return an index instead of the ID?
+ *    It returns an index so the program can access the complete inspection
+ *    record, including its area and vibration.
+ *
+ * 2. Why must displayInspectionsByArea continue after its first match?
+ *    Because multiple inspections can belong to the same area, so the
+ *    function must check every position to find all matching records.
+ *
+ * 3. Why does copyVibrations use valueCount separately from index?
+ *    Because index tracks the original inspection positions, while
+ *    valueCount tracks how many occupied vibration values were copied.
+ *
+ * 4. Why is selectionSort applied to sortedVibrations instead of inspections?
+ *    Because the program only needs to sort the vibration readings for
+ *    statistical calculations. The original inspection records must
+ *    remain unchanged.
+ *
+ * 5. Which two values determine the median when six readings are sorted?
+ *    The two middle values are 0.15 and 0.30. Their average is 0.225,
+ *    which is displayed as 0.23 with two decimal places.
+ */
